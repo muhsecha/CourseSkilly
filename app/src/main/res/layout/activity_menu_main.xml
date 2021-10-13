@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MenuMainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent">
+
+        <RelativeLayout
+            android:id="@+id/rlcalcu"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toRightOf="@+id/rlcurency"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/ivcalcu"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="20dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/keys" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ivcalcu"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="CALCULATOR"
+                android:textColor="@color/black"
+                android:layout_marginBottom="20dp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlcurency"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/rlcalcu"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/ivcurency"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="20dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/exchange" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ivcurency"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="CURRENCY"
+                android:textColor="@color/black"
+                android:layout_marginBottom="20dp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rltemp"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            app:layout_constraintLeft_toRightOf="@+id/rlcurency"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rlcalcu">
+
+            <ImageView
+                android:id="@+id/ivtemp"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="20dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/thermometer" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ivtemp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="TEMPERATURE"
+                android:textColor="@color/black"
+                android:layout_marginBottom="20dp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rllength"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/rlcalcu"
+            app:layout_constraintTop_toBottomOf="@+id/rlcurency">
+
+            <ImageView
+                android:id="@+id/ivlength"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="20dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/ruler" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ivlength"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="LENGTH"
+                android:textColor="@color/black"
+                android:layout_marginBottom="20dp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlweight"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            app:layout_constraintLeft_toRightOf="@+id/rlcurency"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rltemp">
+
+            <ImageView
+                android:id="@+id/ivweight"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="20dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/body_scale" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ivweight"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="WEIGHT"
+                android:textColor="@color/black"
+                android:layout_marginBottom="20dp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlvolume"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/rlcalcu"
+            app:layout_constraintTop_toBottomOf="@+id/rllength">
+
+            <ImageView
+                android:id="@+id/ivvolume"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="20dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/cube"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ivvolume"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="VOLUME"
+                android:textColor="@color/black"
+                android:layout_marginBottom="20dp"/>
+        </RelativeLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

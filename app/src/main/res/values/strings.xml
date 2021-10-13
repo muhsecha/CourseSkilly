@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Course Skilly</string>
+    <string name="etUser">Username</string>
+    <string name="tiPass">Password</string>
+    <string name="btnLogin">Login</string>
+    <string name="login">LOGIN</string>
+    <string name="email">Email</string>
+    <string name="alamat">Alamat</string>
+    <string name="notelp">No Telephone</string>
+    <string name="cornPass">Confirm Password</string>
+    <string name="register">REGISTER</string>
+    <string name="dha">Dont have account?</string>
+    <string name="aha">Already have account?</string>
+</resources>
